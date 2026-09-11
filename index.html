@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Propuesta Comercial - Servicios Contables Juan de la HOZ</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Librerías para generación dinámica de PDF desde HTML -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+
+  <!-- Barra de Herramientas Superior para Control del Usuario -->
+  <header class="toolbar-bar">
+    <div class="toolbar-info">
+      <span class="toolbar-title">Editor Interactivo de Presentación</span>
+      <small>Haz clic sobre cualquier texto para editarlo directamente.</small>
+    </div>
+    <div class="toolbar-actions">
+      <button id="btnAddSlide" class="btn btn-secondary">+ Adicionar Lámina</button>
+      <button id="btnDownloadPDF" class="btn btn-primary">Descargar PDF</button>
+      <button id="btnSendEmail" class="btn btn-accent">Enviar por Correo</button>
+    </div>
+  </header>
+
+  <main id="presentation-container">
+    
+    <!-- LÁMINA 1 -->
+    <section class="slide" id="slide-1">
+      <div class="slide-header">
+        <div>
+          <h1 contenteditable="true">Propuesta de Desarrollo Web &amp; Móvil</h1>
+          <h2 contenteditable="true">Servicios de Contabilidad Juan de la HOZ</h2>
+        </div>
+        <span class="badge" contenteditable="true">IT Project 2026</span>
+      </div>
+      
+      <p contenteditable="true"><b>Empresa Proveedora de Servicios:</b> Viatech Ingeniería de Proyectos</p>
+      
+      <h3>Equipo de Ingeniería del Proyecto</h3>
+      <div class="team-container">
+        <div class="team-card">
+          <span class="badge-role" contenteditable="true">Ingeniera de Proyecto</span>
+          <p class="member-name" contenteditable="true">Ingrid Oñate Acuña</p>
+          <p class="member-sub" contenteditable="true">Viatech Ingeniería de Proyectos</p>
+        </div>
+        <div class="team-card">
+          <span class="badge-role" contenteditable="true">Ingeniero de Proyecto</span>
+          <p class="member-name" contenteditable="true">David Saavedra</p>
+          <p class="member-sub" contenteditable="true">Viatech Ingeniería de Proyectos</p>
+        </div>
+      </div>
+
+      <div class="box-highlight">
+        <p contenteditable="true" style="margin: 0;">
+          <b>Objetivo Tecnológico:</b> Construir una plataforma digital escalable (App Web y Móvil desarrollada en Python/FastAPI con base de datos SQL) que elimine el procesamiento manual en hojas Excel, automatizando la captura de impuestos y previsión (SII/Previred/ACHS), la pasarela de pagos vía Khipu y las notificaciones instantáneas de cobranza.
+        </p>
+      </div>
+
+      <div class="footer-meta">
+        <span contenteditable="true">Cliente: Servicios Contables Juan de la HOZ</span>
+        <span class="slide-counter">Lámina 1</span>
+      </div>
+    </section>
+
+    <!-- LÁMINA 2 -->
+    <section class="slide" id="slide-2">
+      <div class="slide-header">
+        <div>
+          <h1 contenteditable="true">Cronograma y Metodología IT</h1>
+          <h2 contenteditable="true">Fases de Desarrollo y Entregables por Hito</h2>
+        </div>
+        <span class="badge" contenteditable="true">Duración: 8 Semanas</span>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th style="width: 22%;">Fase / Hito</th>
+            <th style="width: 45%;">Actividades Clave Tecnológicas</th>
+            <th style="width: 23%;">Entregables</th>
+            <th style="width: 10%;">Tiempo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td contenteditable="true"><b>1. Levantamiento</b></td>
+            <td contenteditable="true">Análisis de arquitectura SQL, definición de reglas de negocio, estructura anti-duplicados y formulario multiempresa.</td>
+            <td contenteditable="true">Documento de Arquitectura Aprobado.</td>
+            <td contenteditable="true">1,5 Sem.</td>
+          </tr>
+          <tr>
+            <td contenteditable="true"><b>2. Prototipado y Reuniones</b></td>
+            <td contenteditable="true">Diseño UX/UI, maquetación del Menú Hamburguesa, vista Archivos 1, 2 y 3, y prototipo navegable con usuario clave.</td>
+            <td contenteditable="true">Prototipo Navegable (Hito 50% Validación).</td>
+            <td contenteditable="true">2 Sem.</td>
+          </tr>
+          <tr>
+            <td contenteditable="true"><b>3. Desarrollo y Cambios</b></td>
+            <td contenteditable="true">Codificación en Python, API Webhook de Khipu, validación con check ✔, carga masiva de Excel/CSV y motor de correos.</td>
+            <td contenteditable="true">Aplicación Web &amp; Móvil 100% Integrada.</td>
+            <td contenteditable="true">3 Sem.</td>
+          </tr>
+          <tr>
+            <td contenteditable="true"><b>4. Pruebas y Despliegue</b></td>
+            <td contenteditable="true">Auditoría de ciberseguridad, pruebas de carga, marcha blanca piloto con clientes y paso final a servidor productivo.</td>
+            <td contenteditable="true">Plataforma en Producción.</td>
+            <td contenteditable="true">1,5 Sem.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="footer-meta">
+        <span contenteditable="true">Metodología Ágil de Desarrollo</span>
+        <span class="slide-counter">Lámina 2</span>
+      </div>
+    </section>
+
+    <!-- LÁMINA 3 -->
+    <section class="slide" id="slide-3">
+      <div class="slide-header">
+        <div>
+          <h1 contenteditable="true">Propuesta Económica &amp; Servicios IT</h1>
+          <h2 contenteditable="true">Desglose de Inversión y Modalidad de Pago</h2>
+        </div>
+        <span class="badge" contenteditable="true">Cotización Oficial</span>
+      </div>
+
+      <h3>1. Desarrollo de Aplicación Web y Móvil</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Concepto Tecnológico</th>
+            <th>Detalle del Desarrollo</th>
+            <th style="width: 20%;">Monto (CLP)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td contenteditable="true"><b>Desarrollo Integral Web &amp; Móvil</b></td>
+            <td contenteditable="true">Construcción de app en Python (FastAPI/PostgreSQL), autenticación Gmail OAuth, roles Admin/Cliente, Menú Hamburguesa, pasarela Khipu, carga masiva y módulo PDF.</td>
+            <td contenteditable="true"><b>$2.850.000</b></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>2. Modalidad de Pago (Hitos de Facturación)</h3>
+      <ul>
+        <li contenteditable="true"><b>50% Pago Inicial ($1.425.000 CLP):</b> A la presentación y aprobación del prototipo navegable por el usuario clave.</li>
+        <li contenteditable="true"><b>50% Pago Final ($1.425.000 CLP):</b> Una vez desplegada la solución en el entorno productivo.</li>
+      </ul>
+
+      <h3>3. Servicios Adicionales (Infraestructura)</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Servicio Adicional</th>
+            <th>Detalle / Periodicidad</th>
+            <th style="width: 25%;">Valor Estimado</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td contenteditable="true"><b>Servidor BPS / VPS Cloud</b></td>
+            <td contenteditable="true">Hospedaje de alta disponibilidad para app Python y BD SQL.</td>
+            <td contenteditable="true">$25.000 / mes (o $270.000 / año)</td>
+          </tr>
+          <tr>
+            <td contenteditable="true"><b>Dominio Juan de la HOZ</b></td>
+            <td contenteditable="true">Renovación anual del nombre de dominio (.cl / .com).</td>
+            <td contenteditable="true">$15.000 / año</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="footer-meta">
+        <span contenteditable="true">Precios expresados en Pesos Chilenos (CLP)</span>
+        <span class="slide-counter">Lámina 3</span>
+      </div>
+    </section>
+
+    <!-- LÁMINA 4 -->
+    <section class="slide" id="slide-4">
+      <div class="slide-header">
+        <div>
+          <h1 contenteditable="true">Garantía Técnica y Soporte IT</h1>
+          <h2 contenteditable="true">Términos de Cobertura Post-Entrega</h2>
+        </div>
+        <span class="badge" contenteditable="true">Soporte 6 Meses</span>
+      </div>
+
+      <div class="warranty-banner">
+        <h3 contenteditable="true" style="color: var(--accent-color); margin: 0 0 6px 0;">Garantía Técnica Incluida: 6 Meses</h3>
+        <p contenteditable="true" style="margin: 0; font-size: 9.5pt; color: #E2E8F0;">
+          Viatech Ingeniería de Proyectos otorga una garantía de <b>6 meses</b> contados desde la puesta en producción oficial para asegurar la estabilidad operativa del sistema.
+        </p>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th style="width: 50%;">COBERTURA INCLUIDA EN GARANTÍA</th>
+            <th style="width: 50%; background-color: #475569; border-color: #475569;">EXCLUSIONES DE GARANTÍA</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="vertical-align: top;">
+              <ul>
+                <li contenteditable="true">Caídas intempestivas del servicio por fallas de la aplicación.</li>
+                <li contenteditable="true">Corrección de errores o excepciones en código fuente Python (bugs).</li>
+                <li contenteditable="true">No realización de alguna función técnica acordada en la propuesta.</li>
+                <li contenteditable="true">Fallas en el agente automatizado de notificación por correo.</li>
+              </ul>
+            </td>
+            <td style="vertical-align: top;">
+              <ul>
+                <li contenteditable="true">Modificaciones en diseño gráfico, colores o maquetación aprobada.</li>
+                <li contenteditable="true">Creación de nuevas funcionalidades sobre lo entregado.</li>
+                <li contenteditable="true">Integraciones extra no contempladas en el levantamiento inicial.</li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="box-highlight" style="margin-top: 15px; padding: 12px;">
+        <p contenteditable="true" style="margin: 0; font-size: 9pt; text-align: center;">
+          <b>Ingenieros Responsables del Proyecto:</b> Ingrid Oñate Acuña &nbsp;|&nbsp; David Saavedra
+        </p>
+      </div>
+
+      <div class="footer-meta">
+        <span contenteditable="true">Viatech Ingeniería de Proyectos © 2026</span>
+        <span class="slide-counter">Lámina 4</span>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
